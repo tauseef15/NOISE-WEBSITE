@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body {
+  margin: 0;
+}
+img {
+  pointer-events: none;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  height: 55px;
+  width: 100%;
+  justify-content: space-between;
+  background-color: black;
+  border-bottom: 2px solid #666666;
+  position: fixed;
+  z-index: 100;
+}
+
+.navbar-left {
+  width: 200px;
+}
+
+.navbar-left img {
+  width: 12vh;
+  margin-left: 35px;
+  cursor: pointer;
+}
+
+.navbar-middle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-middle-elements {
+  height: 55px;
+  min-width: 100px; /* Adjusted minimum width */
+  margin: 0 5px; /* Margin for each element */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.navbar-middle-elements:hover {
+  border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+.navbar-middle h5 {
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: color 0.5s ease; /* Changed transition to color */
+}
+
+.navbar-middle-elements:hover h5 {
+  color: grey;
+}
+
+.navbar-right {
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar-right-icons {
+  cursor: pointer;
+}
+
+.humberger-icon {
+  display: none;
+}
+.bag-count{
+  color: white;
+  position: absolute;
+  padding: 1px 5px;
+  background-color: red;
+  border-radius: 50%;
+  font-size: 0.8rem;
+}
+
+.homepage {
+  cursor: pointer;
+  padding-top: 55px;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.homepage img {
+  height: calc(100% - 55px);
+  width: 100%;
+  object-fit: cover;
+}
+
+.shortcuts {
+  height: 25vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Adjusted border */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-y: auto; /* Show vertical scrollbar if needed */
+}
+
+.shortcuts-elements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  cursor: pointer;
+}
+
+.shortcuts-elements img {
+  width: 12vh;
+  height: 12vh; /* Maintain aspect ratio */
+  border-radius: 50%;
+}
+
+.shortcuts-elements h4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.hotselling {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Adjusted border */
+}
+
+.hotselling h1 {
+  font-size: 2rem;
+  margin-left: 2vh;
+}
+.hotselling a{
+  font-size: 0.9rem;
+  margin-left: 7vh;
+  color: #A490F8;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.hotselling-items {
+  height: 75vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hotselling-products {
+  width: 100%;
+  border-right: 1px solid rgba(0, 0, 0, 0.1); /* Adjusted border */
+  cursor: pointer;
+}
+
+.hotselling-top {
+  height: 55vh;
+  background-color: #f4f4f4;
+  padding-top: 2vh;
+}
+
+.hotselling-products-heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2vh; /* Margin for each element */
+}
+
+.hotselling-products-heading h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  background: linear-gradient(to right, #acaaf7, #bb45a0, #f7a5b8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+}
+
+.hotselling-products-heading h2 {
+  font-size: 1.1rem;
+}
+
+.hotselling-product-image img {
+  margin-top: 3vh;
+  height: 40vh;
+  margin-left: 3vh;
+}
+
+.hotselling-product-name {
+  height: 10vh;
+  border-top: 1px solid rgba(0, 0, 0, 0.1); /* Adjusted border */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Adjusted border */
+}
+
+.hotselling-product-name h1 {
+  margin-left: 2vh;
+  margin-top: 1vh;
+}
+
+.hotselling-product-name h4 {
+  font-weight: 500;
+  margin-left: 2vh;
+}
+
+.hotselling-product-pricing {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Adjusted border */
+}
+
+.hotselling-product-pricing h3 {
+  color: #f38547;
+}
+.hotselling-product-pricing h4 {
+  color: #858B95;
+  font-size: 16px;
+  text-decoration: line-through;
+  margin-left: 5px;
+  font-weight: 500;
+}
+
+.hotselling-product-pricing button {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 2vh 5vh;
+  border-style: none;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.lunaring {
+  width: 100%;
+  object-fit: contain;
+  cursor: pointer;
+}
+.explore-section {
+  width: 100%;
+  cursor: pointer;
+}
+.explore-section img {
+  width: 100vh;
+}
+.hear-section {
+  align-items: center;
+  display: flex; /* Add flex display */
+  flex-direction: column; /* Align items in a column */
+  text-align: center; /* Align text center */
+  margin-right: 50px;
+}
+
+.hear-section h2 {
+  font-size: 3.5rem;
+}
+.hear-section p {
+  font-size: 1.2rem;
+}
+.hear-section input {
+  border: none; /* Remove default border */
+  border-bottom: 2px solid #c0c5d2; /* Add bottom border */
+  width: 40vh;
+  font-size: 1.2rem;
+  margin-top: 5vh;
+  padding-left: 10vh;
+  color: #c0c5d2;
+  font-weight: 300;
+  transition: border-color 0.3s ease; /* Add transition for smooth effect */
+}
+.hear-section input:focus {
+  color: black;
+  outline: none; /* Remove focus outline */ /* Hide bottom border on focus */
+}
+.hear-section button {
+  display: block; /* Make button a block-level element */
+  margin-top: 60px; /* Add margin to create space between input and button */
+  background-color: transparent;
+  padding: 15px 60px;
+  color: rgb(0, 0, 0);
+  border-radius: 50px;
+  border: 1px solid black;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.noiseblogs {
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.448); /* Adjusted border */
+  border-top: 1px solid rgba(0, 0, 0, 0.448); /* Adjusted border */
+}
+.noiseblogs h1{
+  margin-left: 5vh;
+}
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Five columns of equal width */
+  row-gap: 20px;
+  column-gap: 10px; /* Additional gap between grid items */
+  padding: 10px 10px;
+  margin-top: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.448); /* Adjusted border */
+  padding-bottom: 3vh;
+}
+
+.blog-box {
+  height: 35vh;
+  cursor: pointer;
+}
+.blog-box img{
+  height: 35vh;
+}
+.footer{
+  height: 100vh;
+  padding-top: 20vh;
+  padding-left: 20vh;
+}
+.footer-items{
+  margin-left: 10vh ;
+
+}
+.footer-items h5{
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: grey;
+  font-weight: 400;
+}
+.footer-items h4{
+  margin-bottom: 20px;
+  cursor: pointer;
+
+}
+
+.overflow-control {
+  overflow-x: hidden;
+  overflow-y: auto;
+}

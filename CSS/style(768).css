@@ -1,0 +1,61 @@
+@media screen and (max-width: 768px) {
+  .humberger-icon {
+    display: block;
+  }
+  .navbar-middle {
+    display: none;
+  }
+  .account-icon {
+    display: none;
+  }
+  .hotselling-items {
+    height: 45vh;
+  }
+  .hotselling-top {
+    height: 35vh;
+  }
+  .hotselling-product-image img {
+    height: 22vh;
+    margin-left: 7vh;
+  }
+  .hotselling {
+    height: 7vh;
+  }
+  .hotselling h1 {
+    font-size: 1rem;
+  }
+  .hotselling-product-name {
+    height: 6vh;
+  }
+  .hotselling-product-name h1 {
+    font-size: 0.7rem;
+  }
+  .hotselling-product-name h4 {
+    font-weight: 500;
+    font-size: 0.5rem;
+  }
+  .hotselling-product-pricing {
+    height: 6vh;
+  }
+  .hotselling-product-pricing h2 {
+    font-size: 0.8rem;
+  }
+  .hotselling-product-pricing h3 {
+    font-size: 0.6rem;
+  }
+  .hotselling-product-pricing button {
+    padding: 1.2vh 3vh;
+    border-radius: 30px;
+    font-size: 0.5rem;
+  }
+  .hotselling-products-heading h2 {
+    font-size: 1rem;
+  }
+  .hotselling-products-heading h3 {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+  }
+  .last {
+    display: none;
+  }
+}

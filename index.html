@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    </style>
+    <title>Noise</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/item.css">
+    <link rel="stylesheet" href="CSS/bag.css">
+    <link rel="stylesheet" href="CSS/style(1024).css">
+    <link rel="stylesheet" href="CSS/style(768).css">
+    <link rel="stylesheet" href="CSS/style(425).css">
+</head>
+
+<section>
+    <div class="navbar flex">
+        <div class="navbar-left">
+            <a href="index.html"><img src="https://www.gonoise.com/cdn/shop/files/Group_4_df1f4045-5a8c-4b00-94bb-a6622f06f7da.png?v=1696847023"></a>
+        </div>
+        <div class="navbar-middle flex">
+            <div class="navbar-middle-elements">
+                <h5>Products</h5>
+            </div>
+            <div class="navbar-middle-elements">
+                <h5>Luna Ring</h5>
+            </div>
+            <div class="navbar-middle-elements">
+                <h5>Gift Store</h5>
+            </div>
+            <div class="navbar-middle-elements">
+                <h5>Suoport</h5>
+            </div>
+            <div class="navbar-middle-elements">
+                <h5>Blogs</h5>
+            </div>
+        </div>
+        <div class="navbar-right flex">
+            <div class="navbar-right-icons"><img src="icons/search-icon.svg"></div>
+            <div class="navbar-right-icons" onclick="showItem()"><img src="icons/shop-icon.svg"><span
+                    class="bag-count">0</span></div>
+            <div class="navbar-right-icons account-icon"><img src="icons/account-icon.svg"></div>
+            <div class="navbar-right-icons humberger-icon"><img src="icons/hamburger.svg"></div>
+        </div>
+    </div>
+    <div class="cart">
+        <div class="add-to-cart">
+            <div class="cart-itemss">
+                <div class="your-cart flex">
+                    <h2>Your Cart</h2>
+                    <div onclick="closeItem()"><img class="close-btn" src="icons/close.svg" alt="close"></div>
+                </div>
+                <div class="cart-main">
+                    <div class="cart-items">
+
+                    </div>
+                </div>
+                <div class="bag-summary">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="homepage flex">
+        <img id="slide1 img1" src="https://www.gonoise.com/cdn/shop/files/Dekstop_b9b0435d-a8b2-4187-b83d-9528a0a8fa43.webp?v=1715086336" />
+    </div>
+</section>
+<section>
+    <div class="shortcuts flex">
+        <div class="shortcuts-elements flex">
+            <img src="https://www.gonoise.com/cdn/shop/files/2_fb338103-931d-45d6-ab7f-e67e09f60432.png?v=1701155326">
+            <h4>Pro 5 series</h4>
+        </div>
+        <div class="shortcuts-elements flex">
+            <img src="https://www.gonoise.com/cdn/shop/files/gonoise_swatch.png?v=1704459566">
+            <h4>ANC Earbuds</h4>
+        </div>
+        <div class="shortcuts-elements flex">
+            <img src="https://www.gonoise.com/cdn/shop/files/New_launch_7b1114a9-82fe-4c68-8a51-c076ac8e7a82.png?v=1669961808">
+            <h4>New Launch</h4>
+        </div>
+        <div class="shortcuts-elements flex">
+            <img src="https://www.gonoise.com/cdn/shop/files/Wireless_earbuds_1c1a039e-a404-4334-9697-e0a2d3c709e9.png?v=1669961808">
+            <h4>Wireless Earbuds</h4>
+        </div>
+        <div class="shortcuts-elements flex">
+            <img src="https://www.gonoise.com/cdn/shop/files/Smart_watches_faf22dcd-3b66-427d-a3f0-2227e69764f1.png?v=1694695121">
+            <h4>Special Deals</h4>
+        </div>
+        <div class="shortcuts-elements flex">
+            <img src="https://www.gonoise.com/cdn/shop/files/Calling_smartwatches_74f7b372-3e1e-4cdd-860f-9e883dfdda4e.png?v=1669961808">
+            <h4>Smart Watches</h4>
+        </div>
+        <div class="shortcuts-elements flex">
+            <img src="https://www.gonoise.com/cdn/shop/files/Amoled_Screen_6a2ea3b9-5a6b-4b2e-bcbb-0a062bd22c9b.png?v=1669961808">
+            <h4>Amoled Screen</h4>
+        </div>
+        <div class="shortcuts-elements flex">
+            <img src="https://www.gonoise.com/cdn/shop/files/nav.png?v=1684842058">
+            <h4>Straps </h4>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="hotselling">
+        <h1>Hot-Selling Gadgets</h1><a href="hoteselling.html"><span>VIEW ALL></span></a>
+    </div>
+    <div class="hotselling-items flex">
+
+    </div>
+</section>
+<section>
+    <div class="hotselling">
+        <h1>Just Launched</h1><a href="launched.html"><span>VIEW ALL></span></a>
+    </div>
+    <div id="just-launched" class="hotselling-items  flex">
+        
+    </div>
+</section>
+
+<div class="lunaring">
+    <img class="lunaring" src="https://www.gonoise.com/cdn/shop/files/desktop_3_80aef646-e8b8-4b7f-b48b-9c3ecab3db05.jpg?v=1704344052">
+</div>
+
+<section>
+    <div class="explore flex">
+        <div class="explore-section">
+            <img src="https://www.gonoise.com/cdn/shop/files/desktop-image_1_1000x.jpg?v=1703575372" alt="explore">
+        </div>
+        <div class="explore-section">
+            <img src="https://www.gonoise.com/cdn/shop/files/desktop_IMAGES_1000x.jpg?v=1704187399" alt="explore">
+        </div>
+    </div>
+</section>
+<div class="lunaring">
+    <img class="lunaring" src="https://www.gonoise.com/cdn/shop/files/Desktop2_ef09ed40-ca35-4bff-8f17-b31c8baeef6c.jpg?v=1714634063">
+</div>
+<section>
+    <div class="explore flex">
+        <div class="explore-section">
+            <img src="https://www.gonoise.com/cdn/shop/files/tapsee_desktop_1000x.jpg?v=1703575421" alt="explore">
+        </div>
+        <div class="hear-section flex-column ">
+            <h2>Hear the Noise first</h2>
+            <p>Sign up now to hear about our latest offers, new products, collaborations, all things Noise -
+                straight to your inbox.
+            </p>
+            <input type="text" placeholder="Your email here">
+            <button>SIGN UP</button>
+        </div>
+</section>
+<section>
+    <div class="noiseblogs">
+        <h1>Noise Blogs</h1>
+    </div>
+    <section class="blogs">
+        <div class="blog-box">
+            <img src="https://www.gonoise.com/cdn/shop/files/Artboard_3_d8d4f5d9-0439-459f-9bf5-036211ae2bd8_360x.png?v=1715250787">
+        </div>
+        <div class="blog-box">
+            <img src="https://www.gonoise.com/cdn/shop/files/1188x1038_51e0c815-15ff-4a05-9845-6c5ccb01e278_360x.jpg?v=1713205829">
+        </div>
+        <div class="blog-box">
+            <img src="https://www.gonoise.com/cdn/shop/files/1188x1038_72dccc36-963b-4439-b212-28ce7b480bb0_360x.png?v=1707992648">
+        </div>
+        <div class="blog-box">
+            <img src="https://www.gonoise.com/cdn/shop/files/Main-1_360x.png?v=1707382382">
+        </div>
+        <div class="blog-box">
+            <img src="https://www.gonoise.com/cdn/shop/files/Evolve_4_360x.png?v=1702363342">
+        </div>
+    </section>
+</section>
+<div class="footer">
+    <div class="footer-logo">
+        <img src="https://www.gonoise.com/cdn/shop/files/Mobile_FOOT_0338a7a9-7a66-4758-a2fb-3efab172aee8_180x.png?v=1696847044">
+    </div>
+    <div class="other-footer flex">
+        <div class="footer-follow">
+            <h3>Follow Us</h3>
+            <img src="https://www.gonoise.com/cdn/shop/files/fb_1x.png?v=1614333746">
+            <img src="https://www.gonoise.com/cdn/shop/files/Instagram_1x.png?v=1614333746">
+            <img src="https://www.gonoise.com/cdn/shop/files/youtube_1x.png?v=1614333746">
+        </div>
+        <div class="footer-items flex-column">
+            <h4>Our Products</h4>
+            <h5>Smart Watches</h5>
+            <h5>Wireless Earbuds</h5>
+            <h5>Luna Smart Ring</h5>
+            <h5>NoiseFit App</h5>
+            <h5>Noise Gift Card</h5>
+        </div>
+        <div class="footer-items flex-column">
+            <h4>About Noise</h4>
+            <h5>About us</h5>
+            <h5>Blogs</h5>
+            <h5>Careers</h5>
+            <h5>In the press</h5>
+        </div>
+        <div class="footer-items flex-column">
+            <h4>Support</h4>
+            <h5>Download Your Invoice</h5>
+            <h5>Track Your Order</h5>
+            <h5>Shipping nad Return Policy</h5>
+            <h5>Register and Warranty</h5>
+            <h5>Product Support</h5>
+            <h5>Register a Complaint</h5>
+            <h5>Contact Us</h5>
+        </div>
+    </div>
+</div>
+<section>
+
+</section>
+
+
+<script src="JS/productDetails.js"></script>
+<script src="JS/index.js"></script>
+<script src="JS/secondpage.js"></script>
+<script src="JS/allItems.js"></script>
+<script src="JS/bag.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Items</title>
+    <link rel="stylesheet" href="CSS/item.css">
+    <link rel="stylesheet" href="CSS/bag.css">
+    <link rel="stylesheet" href="CSS/allItems.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <section>
+        <div class="navbar flex">
+            <div class="navbar-left">
+                <a href="index.html"><img src="images/logo.jpg"></a>
+            </div>
+            <div class="navbar-middle flex">
+                <div class="navbar-middle-elements">
+                    <h5>Products</h5>
+                </div>
+                <div class="navbar-middle-elements">
+                    <h5>Luna Ring</h5>
+                </div>
+                <div class="navbar-middle-elements">
+                    <h5>Gift Store</h5>
+                </div>
+                <div class="navbar-middle-elements">
+                    <h5>Suoport</h5>
+                </div>
+                <div class="navbar-middle-elements">
+                    <h5>Blogs</h5>
+                </div>
+            </div>
+            <div class="navbar-right flex">
+                <div class="navbar-right-icons"><img src="icons/search-icon.svg"></div>
+                <div class="navbar-right-icons" onclick="showItem()"><img src="icons/shop-icon.svg"><span
+                        class="bag-count">0</span></div>
+                <div class="navbar-right-icons account-icon"><img src="icons/account-icon.svg"></div>
+                <div class="navbar-right-icons humberger-icon"><img src="icons/hamburger.svg"></div>
+            </div>
+        </div>
+        <div class="cart">
+            <div class="add-to-cart">
+                <div class="cart-itemss">
+                    <div class="your-cart flex">
+                        <h2>Your Cart</h2>
+                        <div onclick="closeItem()"><img class="close-btn" src="icons/close.svg" alt="close"></div>
+                    </div>
+                    <div class="cart-main">
+                        <div class="cart-items">
+
+                        </div>
+                    </div>
+                    <div class="bag-summary">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="all-items">
+        <div class="heading flex">
+            <h1 class="heading-item">Items</h1>
+        </div>
+        <div class="all-products flex">
+
+        </div>
+    </div>
+    <script src="JS/productDetails.js"></script>
+<script src="JS/index.js"></script>
+<script src="JS/secondpage.js"></script>
+<script src="JS/allItems.js"></script>
+<script src="JS/bag.js"></script>
+</body>
+
+</html>
