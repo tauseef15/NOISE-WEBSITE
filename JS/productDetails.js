@@ -627,4 +627,56 @@ const item = [
     
     link: "secondpage.html",
   },
+
+  {
+    id: 10,
+    category: "HOTSELLING",
+    update: "JUST LAUNCHED",
+    rating: "⭐4.9",
+    name: "Buds Xero Adaptive ANC",
+    specs: '120 Hrs Playtime',
+    price: "₹4,499",
+    original_price: "₹6,999",
+    offer: "31% OFF",
+    image:
+        "https://www.gonoise.com/cdn/shop/files/3_645216a0-d7de-40ea-8880-893d47292861.png?v=1714044080",
+        slider1: {
+      image1:
+        "https://www.gonoise.com/cdn/shop/files/Black_fcafad9f-543e-4c12-b49b-b91d0bc0eef5.png?v=1714044080",
+      image2:
+        "https://www.gonoise.com/cdn/shop/files/1_f269eb26-c769-4eb7-b379-3f4d8f28a84b.png?v=1714044080",
+      image3:
+        "https://www.gonoise.com/cdn/shop/files/2_cfa6f5b0-96a0-4833-9786-ff343d73bebb.png?v=1714044080",
+      image4:
+        "https://www.gonoise.com/cdn/shop/files/5_cccd7e77-63e5-4397-885c-559704bec734.png?v=1714044080",
+      image5:
+        "https://www.gonoise.com/cdn/shop/files/5_cccd7e77-63e5-4397-885c-559704bec734.png?v=1714044080",
+    },
+    slider2: {
+      image1:
+        "https://www.gonoise.com/cdn/shop/files/Blue_be3003ff-5651-4db6-8143-5ca8e81ecfd5.png?v=1714043768",
+      image2:
+        "https://www.gonoise.com/cdn/shop/files/1_aa782a83-b8c2-4eb7-bff2-b5bd4e8f1a13.png?v=1714043768",
+      image3:
+        "https://www.gonoise.com/cdn/shop/files/4_37c430ec-b373-458f-b968-db9fab695d27.png?v=1714043768",
+      image4:
+        "https://www.gonoise.com/cdn/shop/files/2_665c0100-8038-4a7a-9c6b-dce3ba07f812.png?v=1714043768",
+      image5:
+        "https://www.gonoise.com/cdn/shop/files/3_090c2238-4db8-4b02-925c-628733c5f6b2.png?v=1714043768",
+    },
+    slider3: {
+      image1:
+        "https://www.gonoise.com/cdn/shop/files/Beige_b8bace91-1ca1-4182-a043-d58a3a7534c7.png?v=1714033033",
+      image2:
+        "https://www.gonoise.com/cdn/shop/files/1_c5fad0a9-61ba-47c9-82a2-df5b1796af31.png?v=1714033033",
+      image3:
+        "https://www.gonoise.com/cdn/shop/files/4_f24621b6-7c6f-41bf-a6d1-5641ac1849bb.png?v=1714033033",
+      image4:
+        "https://www.gonoise.com/cdn/shop/files/3_b1c1e766-0692-4abc-922d-bcefe4c9e144.png?v=1714033033",
+      image5:
+        "https://www.gonoise.com/cdn/shop/files/2_66f00def-89eb-42f5-be31-bbf63c06e67d.png?v=1714033033",
+    },
+    
+    link: "secondpage.html",
+  },
 ];
